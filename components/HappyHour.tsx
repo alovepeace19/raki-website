@@ -54,11 +54,12 @@ const HappyHour: React.FC = () => {
 
                 {/* Image Side */}
                 <div className="order-1 md:order-2 h-72 md:h-[500px] relative overflow-hidden">
-                    <img 
-                        src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" 
-                        alt="Raki Salon Interior Black and White" 
-                        className="w-full h-full object-cover grayscale contrast-125 brightness-75 hover:scale-105 transition-transform duration-1000 ease-out"
-                    />
+<img
+  src="/store-photo.jpeg"
+  alt="RAKI salon interior"
+  loading="lazy"
+  className="w-full h-full object-cover grayscale contrast-125 brightness-75 hover:scale-105 transition-transform duration-1000 ease-out"
+/>
                     {/* Inner border/overlay effect */}
                     <div className="absolute inset-0 border border-zinc-800/50 pointer-events-none"></div>
                 </div>
