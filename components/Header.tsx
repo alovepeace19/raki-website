@@ -21,9 +21,20 @@ const Header: React.FC = () => {
     return (
         <header className={`sticky top-0 z-50 transition-all duration-300 border-b border-zinc-800 ${isScrolled ? 'bg-black/95 backdrop-blur-md py-3' : 'bg-black py-4'}`}>
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-                <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => window.scrollTo(0,0)}>
-                    <span className="text-xl md:text-2xl font-serif tracking-[0.15em] text-white uppercase hover:text-raki-gold transition-colors duration-300">RAKI</span>
-                </div>
+
+<div
+  className="flex-shrink-0 flex items-center cursor-pointer select-none"
+  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+  aria-label="Go to top"
+>
+  <img
+    src="/raki-logo.png"
+    alt="RAKI Quick Haircut"
+    className="h-6 md:h-7 w-auto block opacity-95 hover:opacity-100 transition"
+    loading="eager"
+  />
+</div>
+                
                 <div className="flex items-center space-x-5 md:space-x-6">
                     {socialLinks.map((link) => (
                         <a 
